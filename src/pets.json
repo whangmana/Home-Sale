@@ -1,0 +1,98 @@
+[
+  {
+    "id": 0,
+    "name": "Mera Village",
+    "picture": "images/B1.jpg",
+    "age": "12,000,000 THB",
+    "breed": "5 Bedrooms/ 5 Bathrooms/ Area 450 Sq.m.",
+    "location": "Rama 9, Bangkok"
+  },
+  {
+    "id": 1,
+    "name": "Suksawat Village",
+    "picture": "images/B2.jpg",
+    "age": "4,500,000 THB",
+    "breed": "4 Bedrooms/ 3 Bathrooms/ Area 320 Sq.m.",
+    "location": "Srinakarin, Bangkok"
+  },
+  {
+    "id": 2,
+    "name": "Linlada Village",
+    "picture": "images/B3.jpg",
+    "soze": "3,900,000 THB",
+    "breed": "3 Bedrooms/ 2 Bathrooms/ Area 340 Sq.m.",
+    "location": "Bangkapi, Bangkok"
+  },
+  {
+    "id": 3,
+    "name": "Malia Village",
+    "picture": "images/B4.jpg",
+    "age": "5,200,000 THB",
+    "breed": "5 Bedrooms/ 4 Bathrooms/ Area 360 Sq.m.",
+    "location": "Bangna, Samut Prakan"
+  },
+  {
+    "id": 4,
+    "name": "Tipawan Village",
+    "picture": "images/B5.jpg",
+    "age": "3,400,000 THB",
+    "breed": "3 Bedrooms/ 3 Bathrooms/ Area 220 Sq.m.",
+    "location": "Ramkhamhaeng, Bangkok"
+  },
+  {
+    "id": 5,
+    "name": "Sripana Village",
+    "picture": "images/B6.jpg",
+    "age": "3,700,000 THB",
+    "breed": "3 Bedrooms/ 2 Bathrooms/ Area 340 Sq.m.",
+    "location": "Ratchadaphisek, Bangkok"
+  },
+  {
+    "id": 6,
+    "name": "Supalai Village",
+    "picture": "images/B7.jpg",
+    "age": "9,200,000 THB",
+    "breed": "4 Bedrooms/ 4 Bathrooms/ Area 380 Sq.m.",
+    "location": "Din Daena, Bangkok"
+  },
+  {
+    "id": 7,
+    "name": "Casa Village",
+    "picture": "images/B8.jpg",
+    "age": "5,900,000 THB",
+    "breed": "4 Bedrooms/ 3 Bathrooms/ Area 410 Sq.m.",
+    "location": "Bang Bua Thong, Nonthaburi"
+  },
+  {
+    "id": 8,
+    "name": "Iyara Village",
+    "picture": "images/B9.jpg",
+    "age": "6,120,000 THB",
+    "breed": "4 Bedrooms/ 4 Bathrooms/ Area 400 Sq.m.",
+    "location": "Bang Kruai, Nonthaburi"
+  },
+  {
+    "id": 9,
+    "name": "Nantana Village",
+    "picture": "images/B10.jpg",
+    "age": "3,800,000 THB",
+    "breed": "3 Bedrooms/ 3 Bathrooms/ Area 440 Sq.m.",
+    "location": "Changwattana, Nonthaburi"
+  },
+  {
+    "id": 10,
+    "name": "Bua Village",
+    "picture": "images/B11.jpg",
+    "age": "4,100,000 THB",
+    "breed": "4 Bedrooms/ 4 Bathrooms/ Area 420 Sq.m.",
+    "location": "Rama 2, Bangkok"
+  },
+  {
+    "id": 11,
+    "name": "Happy Village",
+    "picture": "images/B12.jpg",
+    "age": "7,500,000 THB",
+    "breed": "5 Bedrooms/ 3 Bathrooms/ Area 480 Sq.m.",
+    "location": "Rama 3, Bangkok"
+  }
+]
