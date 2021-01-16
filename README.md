@@ -190,7 +190,7 @@ truffle test
    </div>
  
    <div id="petTemplate" style="display: none;">
-     <div class="col-sm-6 col-md-6 col-lg-4">
+     <div class="col-sm-8 col-md-6 col-lg-4">
        <div class="panel panel-default panel-pet">
          <div class="panel-heading" style="background-color: rgb(215, 240, 215);">
            <h3 class="panel-title" style= "color: black; font-size: 20px; font-weight: 1000;"><strong>Scrappy</strong></h3>
@@ -218,16 +218,38 @@ truffle test
 </html>
 ```
 
-ในโค้ดนี้ได้เปลี่ยนข้อมูลส่วนที่นำไปแสดงผลในรายละเอียดของ pet-shop 
-- จาก breed เป็น Detail ซึ่งบอกถึงรายละเอียดข้อมูลบ้านแต่ละหลังใน home-sale
-- จาก age เป็น Price ซึ่งบอกถึงราคาบ้านแต่ละหลังใน home-sale
-- ส่วน Location ไม่ได้ทำการเปลี่ยน เพื่อให้แสดงตำแหน่งที่อยู่บ้านแต่ละหลังใน home-sale
-- เปลี่ยนชื่อเว็บไซต์จาก Pet's Pet Shop เป็น Homes Sale
-- เปลี่ยนชื่อเว็บไซต์ให้เป็นสีน้ำเงิน
-- เปลี่ยนขนาดตัวอักษรให้ใหญ่ขี้น
-- เปลี่ยน background หัวเรื่องชื่อหมู่บ้านแต่ละหลังให้มีสีสัน (สีเขียวอ่อน), สีให้เป็นสีดำม ขนาดตัวอักษรให้ใหญ่ และมีความหนาขึ้น
-- เปลี่ยนขนาดของรูปภาพให้มีขนาดใหญ่ขึ้น 
-- เปลี่ยนตัวอักษรจาก Adopt เป็น Buy และทำให้ตัวอักษาหนาขึ้น และเปลี่ยนสีของตัวอักษาให้ป็นสีน้ำเงิน
+
+```
+โค้ดในไฟล์ index.html นี้ ได้เปลี่ยนข้อมูลส่วนที่นำไปแสดงผลในรายละเอียดของ pet-shop
+
+- เปลี่ยนชื่อเว็บไซต์จาก Pet's Pet Shop เป็น Homes Sale ใน README นี้ อยู่บรรทัดที่ 175 และ 192 ดังนี้
+<title>Homes Sale</title> (บรรทัดที่ 175)
+<h1 class="text-center" style="color: blue; font-size: 60px;"><strong>Homes Sale</strong></h1> (บรรทัดที่ 192)
+
+- ตัวอักษรชื่อเว็บไซต์ที่อยู่ตรงกลาง เปลี่ยนเป็นสีน้ำเงิน ขนาดตัวอักษรใหญ่ขึ้น และมีความหนาขึ้น ใน README นี้ อยู่บรรทัดที่ 192 ดังนี้
+<h1 class="text-center" style="color: blue; font-size: 60px;"><strong>Homes Sale</strong></h1>
+
+- เปลี่ยน background หัวเรื่องชื่อหมู่บ้านแต่ละหลังให้มีสีสัน (สีเขียวอ่อน) ใน README นี้ อยู่บรรทัดที่ 206 ดังนี้
+<div class="panel-heading" style="background-color: rgb(215, 240, 215);">
+
+-  เปลี่ยนสีตัวอักษรตรงส่วน title ให้เป็นสีดำ ขนาดตัวอักษรให้ใหญ่ และมีความหนาขึ้น ใน README นี้ อยู่บรรทัดที่ 207 ดังนี้ 
+<h3 class="panel-title" style= "color: black; font-size: 20px; font-weight: 1000;"><strong>Scrappy</strong></h3>
+
+- เปลี่ยนขนาดของกรอบรูปภาพให้มีขนาดใหญ่ขึ้น ใน README นี้ อยู่บรรทัดที่ 193 ดังนี้ 
+<div class="col-sm-8 col-md-6 col-lg-4">
+
+- จาก breed เป็น Detail ซึ่งบอกถึงรายละเอียดข้อมูลบ้านแต่ละหลังใน home-sale ใน README นี้ อยู่บรรทัดที่ 212 ดังนี้ 
+<strong>Detail</strong>: <span class="pet-breed">Golden Retriever</span><br/>
+
+- จาก age เป็น Price ซึ่งบอกถึงราคาบ้านแต่ละหลังใน home-sale ใน README นี้ อยู่บรรทัดที่ 213 ดังนี้ 
+<strong>Price</strong>: <span class="pet-age">3</span><br/>
+
+- ส่วน Location ไม่ได้ทำการเปลี่ยน เพื่อให้แสดงตำแหน่งที่อยู่บ้านแต่ละหลังใน home-sale ใน README นี้ อยู่บรรทัดที่ 214 ดังนี้ 
+<strong>Location</strong>: <span class="pet-location">Warren, MI</span><br/><br/>
+
+- เปลี่ยนตัวอักษรที่ button จาก Adopt เป็น Buy และทำให้ตัวอักษาหนาขึ้น และเปลี่ยนสีของตัวอักษาให้ป็นสีน้ำเงิน ใน README นี้ อยู่บรรทัดที่ 215 ดังนี้ 
+<button class="btn btn-default btn-adopt" style="color: blue; font-weight: 900;" type="button" data-id="0"><strong>Buy</strong></button>
+```
 
 
 ## 4. สร้าง Backend ที่สามารถเชื่อมต่อกับ Smart Contract
