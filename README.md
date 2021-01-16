@@ -226,6 +226,9 @@ truffle test
 <title>Homes Sale</title> (บรรทัดที่ 175)
 <h1 class="text-center" style="color: blue; font-size: 60px;"><strong>Homes Sale</strong></h1> (บรรทัดที่ 192)
 
+- ปรับให้การแสดงชื่อเว็บไซต์อยู่จุดกึ่งกลางพอดี ไม่ไปทางซ้ายหรือขวามากเกินไป ใน README นี้ อยู่บรรทัดที่ 179 ดังนี้
+<div class="col-xs-15 col-sm-8 col-sm-push-2">
+
 - ตัวอักษรชื่อเว็บไซต์ที่อยู่ตรงกลาง เปลี่ยนเป็นสีน้ำเงิน ขนาดตัวอักษรใหญ่ขึ้น และมีความหนาขึ้น ใน README นี้ อยู่บรรทัดที่ 192 ดังนี้
 <h1 class="text-center" style="color: blue; font-size: 60px;"><strong>Homes Sale</strong></h1>
 
