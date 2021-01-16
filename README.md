@@ -52,17 +52,6 @@ contract Adoption {
 }
 ```
 
-โค้ดในไฟล์ Adoption.sol นี้ ได้เปลี่ยนข้อมูล ดังต่อไปนี้
-- เปลี่ยน address จาก 16 ให้เป็น 12 ตามไฟล์รูปบ้านที่ดึงมาโชว์ ที่เว็บไซต์ ซึ่งอยู่ในส่วนของ contract  
-ใน README นี้ อยู่บรรทัดที่ 43 ดังนี้ ``` address[12] public adopters; ```
-
-- เปลี่ยน id การรันเป็น >=0 และ <=11 ในส่วนของ sender  
-ใน README นี้ อยู่บรรทัดที่ 45 ดังนี้ ``` require(petId >= 0 && petId <=11); ```
-
-- เปลี่ยน address จาก 16 เป็น 12 ในส่วนของ get  
-ใน README นี้ อยู่บรรทัดที่ 49 ดังนี้ ``` function getAdopters() public view returns (address[12] memory) { ```
-
-
 #### 2.2. Compile และ Migrate
 #### ทำการคอมไพล์ Smart Contracts โดยใช้คำสั่ง
 
