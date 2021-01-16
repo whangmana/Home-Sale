@@ -52,22 +52,27 @@ contract Adoption {
 }
 ```
 
-ในโค้ดนี้ได้เปลี่ยนข้อมูล ดังต่อไปนี้
-- เปลี่ยน address จาก 16 ให้เป็น 12 ตามไฟล์รูปบ้านที่ดึงมาโชว์ ที่เว็บไซต์ ซึ่งอยู่ในส่วนของ contract
-- เปลี่ยน id การรันเป็น >=0 และ <=11 ในส่วนของ sender
-- เปลี่ยน address จาก 16 เป็น 12 ในส่วนของ get
+โค้ดในไฟล์ Adoption.sol นี้ ได้เปลี่ยนข้อมูล ดังต่อไปนี้
+- เปลี่ยน address จาก 16 ให้เป็น 12 ตามไฟล์รูปบ้านที่ดึงมาโชว์ ที่เว็บไซต์ ซึ่งอยู่ในส่วนของ contract  
+ใน README นี้ อยู่บรรทัดที่ 43 ดังนี้ ``` address[12] public adopters; ```
+
+- เปลี่ยน id การรันเป็น >=0 และ <=11 ในส่วนของ sender  
+ใน README นี้ อยู่บรรทัดที่ 45 ดังนี้ ``` require(petId >= 0 && petId <=11); ```
+
+- เปลี่ยน address จาก 16 เป็น 12 ในส่วนของ get  
+ใน README นี้ อยู่บรรทัดที่ 49 ดังนี้ ``` function getAdopters() public view returns (address[12] memory) { ```
 
 
 #### 2.2. Compile และ Migrate
-ทำการคอมไพล์ Smart Contracts โดยใช้คำสั่ง
+#### ทำการคอมไพล์ Smart Contracts โดยใช้คำสั่ง
 
 ```
 truffle compile
 ```
 
-ตรวจสอบว่า สามารถคอมไพล์ได้สำเร็จก่อนทำในขั้นตอนต่อไป
+ตรวจสอบว่า สามารถคอมไพล์ได้สำเร็จก่อนทำขั้นตอนต่อไป
 
-ใช้ Visual Studio Code ในการสร้างไฟล์ 2_deploy_contracts.js ในไดเร็กทอรี migrations ดังนี้
+#### ใช้ Visual Studio Code ในการสร้างไฟล์ 2_deploy_contracts.js ในไดเร็กทอรี migrations ดังนี้
 
 ```
 var Adoption = artifacts.require("Adoption");
@@ -76,19 +81,26 @@ module.exports = function(deployer) {
 };
 ```
 
-เปิดโปรแกรม Ganache โดยการใช้เมาส์ดับเบิลคลิกที่ชื่อไฟล์ จากนั้นคลิกที่ NF507 (ในกรณีที่ใช้งานครั้งแรกให้คลิกที่ New Workspace ครั้งต่อไปไม่จำเป็นต้องสร้าง Workspace ใหม่ทุกครั้ง)
+โค้ดในไฟล์ 2_deploy_contracts.js นี้ เป็นการสร้างขึ้นเพื่อใช้ deploy (โดยต้องเปิด Ganache ขึ้นมาก่อนแล้ว deploye ด้วยคำสั่ง truffle migrate)
+
+#### เปิดโปรแกรม Ganache โดยการใช้เมาส์ดับเบิลคลิกที่ชื่อไฟล์ จากนั้นคลิกที่ NF507 (ในกรณีที่ใช้งานครั้งแรกให้คลิกที่ New Workspace ครั้งต่อไปไม่จำเป็นต้องสร้าง Workspace ใหม่ทุกครั้ง)
 
 [![Ganache-NF507.png](https://i.postimg.cc/R0zHSMv4/Ganache-NF507.png)](https://postimg.cc/9DJM1H4n)
 
-ผลลัพธ์ที่ได้เป็นดังรูป โดย Ganache สร้างบัญชีให้ 10 บัญชี แต่ละบัญชีมี 100 ETH โดยดีฟอล์ต
+ผลลัพธ์ที่ได้เป็นดังรูป โดย Ganache สร้างบัญชีให้ 10 บัญชี แต่ละบัญชีมี 100 ETH โดยดีฟอล์ต ``` ในรูปจะเหลือ BALANCE 95.98 ETH ```
 
 [![ganache.jpg](https://i.postimg.cc/MGFJ0GX8/ganache.jpg)](https://postimg.cc/QB1zhhp6)
 
-เมื่อ Ganache ทำงานได้ดังรูปข้างต้น ขั้นตอนต่อไปคือการ migrate ทำได้โดยใช้คำสั่งต่อไปนี้
+เมื่อ Ganache ทำงานได้ดังรูปข้างต้น ขั้นตอนต่อไปคือการ migrate 
+
+#### ทำการ Migrate โดยใช้คำสั่งต่อไปนี้
 
 ```
 truffle migrate
 ```
+
+ในโค้ดนี้จะเป็นการ truffle migrate เพื่อ deploy
+
 
 #### 2.3. ทดสอบ Smart Contract
 ใช้ Visual Studio Code ในการสร้างไฟล์ TestAdoption.sol เพื่อทดสอบ Adoption.sol และบันทึกลงในไดเร็กทอรี test 
@@ -539,4 +551,6 @@ npm run dev
 
 
 #### สังเกต 
-กรณีบ้านที่มีการซื้อไปแล้ว สถานะจะเปลี่ยนจาก Buy เป็น ``` Sold Out ```
+- กรณีบ้านที่มีการซื้อไปแล้ว สถานะจะเปลี่ยนจาก Buy เป็น ``` Sold Out ```
+- กรณีที่มีการเปลี่ยนแปลงข้อมูล หรือสร้างไฟล์ใหม่ทุกครั้งต้องทำการ ``` Save ``` เพื่อบันทึกไฟล์ก่อนรันทุกครั้ง
+
