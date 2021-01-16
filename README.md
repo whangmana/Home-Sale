@@ -477,6 +477,14 @@ $(function() {
 ]
 ```
 
+โค้ดในไฟล์ pets.json นี้ จะนำไปแสดงผลลัพธ์ตอนรันโปรแกรม ดังนี้
+- id เป็นการแสดงลำดับของรูปบ้าน
+- name เป็นชื่อหมูบ้าน อยู่ส่วนบนของรูปบ้าน
+- picture เป็นรูปบ้านแต่ละหลัง
+- age เป็นราคาบ้านแต่ละหลัง
+- breed เป็นรายละเอียดของบ้านแต่ละหลัง
+- location เป็นที่ตั้งบ้านแต่ละหลัง
+
 
 #### 4.3 เพิ่มไฟล์รูปภาพบ้านใน images ซึ่งอยู่ใน folder ของ src 12 ไฟล์ มีชื่อไฟล์ดังนี้
 
@@ -545,9 +553,6 @@ npm run dev
 [![Final1.jpg](https://i.postimg.cc/mDdVk1PM/Final1.jpg)](https://postimg.cc/gXZ3BJqk)
 [![Final2.jpg](https://i.postimg.cc/7hf92PzR/Final2.jpg)](https://postimg.cc/p5MKNHqQ)
 [![Final3.jpg](https://i.postimg.cc/QNy0r5GZ/Final3.jpg)](https://postimg.cc/t7Fh3s4B)
-
-
-
 
 
 #### สังเกต 
